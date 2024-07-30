@@ -1,0 +1,297 @@
+/***********************/
+/* BELOW 1440px (Laptop Large) */
+/* CALCULATION: 1440/ 16 = 90 */
+/***********************/
+@media (max-width: 90rem) {
+  .header__title {
+    grid-template-columns: 2.5fr 2fr;
+  }
+
+  .header__img {
+    width: 40%;
+    right: 3rem;
+    bottom: 0;
+    transform: translateY(-0rem);
+  }
+
+  .about__us--info {
+    width: 250rem;
+  }
+
+  .about-us-img {
+    width: 100%;
+  }
+}
+
+/***********************/
+/* BELOW 1024px (Laptop) */
+/* CALCULATION: 1024/ 16 = 64 */
+/***********************/
+@media (max-width: 64rem) {
+  html {
+    font-size: 55.5%;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  .header__img {
+    width: 45%;
+    bottom: 0;
+    transform: translateY(0rem);
+    z-index: -1;
+  }
+
+  .features {
+    gap: 3rem;
+  }
+
+  .features__feature {
+    width: 90%;
+  }
+
+  .features__icon {
+    margin-bottom: 1rem;
+  }
+
+  .features__header {
+    margin-bottom: 0.5rem;
+  }
+
+  .about__us {
+    max-width: 100rem;
+    align-items: center;
+  }
+
+  .about__us--info {
+    gap: 2rem;
+  }
+
+  .about-us-img {
+    transform: translateY(4rem);
+  }
+
+  .trainers__cards {
+    max-width: 100rem;
+  }
+
+  .trainers__card p {
+    height: 205px;
+  }
+}
+
+/***********************/
+/* BELOW 768px (Laptop) */
+/* CALCULATION: 768/ 16 = 48 */
+/***********************/
+@media (max-width: 48rem) {
+  html {
+    font-size: 41%;
+  }
+
+  .header__img {
+    width: 50%;
+    bottom: 2.5rem;
+    transform: translateY(2.5rem);
+  }
+
+  .features {
+    margin: 0 9rem;
+  }
+
+  .features__icon {
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+
+  .about__us {
+    max-width: 90rem;
+  }
+
+  .about-us-img {
+    transform: translateY(6rem);
+  }
+
+  .trainers__card p {
+    height: 168px;
+  }
+
+  .photo__gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/***********************/
+/* BELOW 425px (Laptop) */
+/* CALCULATION: 425/ 16 = 26.5625 */
+/***********************/
+@media (max-width: 26.5625rem) {
+  html {
+    font-size: 38%;
+    overflow-x: hidden;
+  }
+
+  .nav {
+    padding: 0 1rem;
+  }
+
+  .nav__item {
+    margin-left: 2rem;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in;
+
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+    position: fixed;
+    /* z-index: 1000; */
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav__links {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .header__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .header__img {
+    width: 70%;
+    right: 50%;
+    bottom: 0;
+    transform: translateX(50%);
+    justify-self: center;
+    /* position: fixed; */
+  }
+
+  .section__title {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .features img:nth-child(4) {
+    grid-row: 3;
+  }
+
+  .about__us {
+    flex-direction: column;
+  }
+
+  .about__us--info {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-us-img {
+    width: 70%;
+  }
+
+  .about__us--img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .trainers__cards {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .trainers__card {
+    width: 75%;
+    height: 100%;
+  }
+
+  .trainers__card p {
+    height: 120px;
+  }
+
+  .faqs__tab-container {
+    gap: 2rem;
+  }
+
+  .faqs__tab {
+    margin-right: 0;
+  }
+
+  .faqs__content--active {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    /* grid-template-rows: 1fr; */
+  }
+
+  .faqs__content p {
+    grid-column: 1;
+  }
+
+  .photo__gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__nav {
+    gap: 3rem;
+  }
+
+  .footer__item {
+    margin-right: 0;
+  }
+
+  .modal__form {
+    margin: 0 2rem;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
