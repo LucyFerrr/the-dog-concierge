@@ -133,7 +133,6 @@
 @media (max-width: 26.5625rem) {
   html {
     font-size: 38%;
-    overflow-x: hidden;
   }
 
   .nav {
@@ -175,8 +174,7 @@
     pointer-events: auto;
     visibility: visible;
     transform: translateX(0);
-    position: fixed;
-    /* z-index: 1000; */
+    /* position: fixed; */
   }
 
   .nav-open .icon-mobile-nav[name="close-outline"] {
@@ -201,13 +199,17 @@
     margin-bottom: 0px;
   }
 
+  h1 {
+    margin-top: 10rem;
+  }
+
   .header__img {
     width: 70%;
     right: 50%;
     bottom: 0;
-    transform: translateX(50%);
+    transform: translateX(0%);
     justify-self: center;
-    /* position: fixed; */
+    position: static;
   }
 
   .section__title {

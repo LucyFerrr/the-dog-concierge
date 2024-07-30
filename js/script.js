@@ -2,7 +2,6 @@
 
 ///////////////////////////////////////
 // Selected Elements
-const headerEl = document.querySelector(".header");
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
@@ -74,7 +73,7 @@ const scrollTo = function () {
 // Return Value: None
 //-----------------------------------------------------------------------------
 const openMobileNav = function () {
-  headerEl.classList.toggle("nav-open");
+  header.classList.toggle("nav-open");
 };
 
 //=============================================================================
@@ -84,7 +83,7 @@ const openMobileNav = function () {
 // Return Value: None
 //-----------------------------------------------------------------------------
 const openMobileNavKey = function (e) {
-  if (e.key === "Escape") headerEl.classList.toggle("nav-open");
+  if (e.key === "Escape") header.classList.toggle("nav-open");
 };
 
 //=============================================================================
@@ -101,7 +100,7 @@ const navScrollTo = function (e) {
   }
 
   if (e.target.classList.contains(`nav__link`))
-    headerEl.classList.toggle("nav-open");
+    header.classList.toggle("nav-open");
 };
 
 //=============================================================================
